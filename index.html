@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Videojoc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen" >
+  <h1>Snake Game</h1>
+
+  <label>Snake Size:</label>
+  <select id="sizeSelect">
+    <option value="10">Small</option>
+    <option value="20" selected>Medium</option>
+    <option value="30">Large</option>
+  </select>
+
+  <label>Speed:</label>
+  <select id="speedSelect">
+    <option value="5">Slow</option>
+    <option value="10" selected>Normal</option>
+    <option value="20">Fast</option>
+  </select>
+
+  <button id="startGame" onclick="startGame()">Start Game</button>
+</div>
+
+<!-- Fi dels controls -->
+
+<div id="score">Score: 0</div>
+<div id="game-container"></div>
+<button id="restartBtn" style="display:none;">Restart</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
